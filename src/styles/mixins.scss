@@ -1,3 +1,9 @@
+@mixin notebook-height{
+  @media (max-width: 1650px) {
+    @content
+  }
+};
+
 @mixin notebook{
   @media (max-width: 1530px) {
     @content

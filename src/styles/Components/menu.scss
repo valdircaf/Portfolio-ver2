@@ -35,6 +35,9 @@
     perspective: 700px;
     padding: 200px 300px 0 0;
     text-align: right;
+    @include mixins.notebook-height{
+      padding: 200px 200px 0 0;
+    }
     @include mixins.tablet{
       padding: 400px 150px 0 0;
     }
