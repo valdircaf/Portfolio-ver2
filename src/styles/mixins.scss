@@ -1,0 +1,47 @@
+@mixin notebook{
+  @media (max-width: 1530px) {
+    @content
+  }
+};
+
+@mixin notebook2{
+  @media (max-width: 1312px) {
+    @content
+  }
+};
+
+@mixin tablet{
+  @media (max-width: 1020px) {
+    @content
+  }
+};
+
+@mixin phone{
+  @media (max-width: 798px) {
+    @content
+  }
+};
+
+@mixin phone2{
+  @media (max-width: 588px) {
+    @content
+  }
+};
+
+@mixin iphone{
+  @media (max-width: 414px) {
+    @content
+  }
+};
+
+@mixin about-notebook{
+  @media (max-width: 1413px) {
+    @content
+  }
+};
+
+@mixin menuProjects-notebook1{
+  @media (max-width: 1475px) {
+    @content
+  }
+};

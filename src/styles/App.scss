@@ -1,0 +1,32 @@
+@use './variables.scss';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  background-color: variables.$background-linear-colorTwo;
+  ::-webkit-scrollbar {
+    background-color: #FFF;
+    width: 12px;
+  }
+
+  /* Altera a cor da própria barra de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background-color: variables.$background-linear-colorOne;
+    border-radius: 3px;
+  }
+
+  /* Altera a cor quando a barra de rolagem é hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: variables.$menu-fontColor;
+  }
+}
+
+body{
+  min-height: 100vh;
+  max-height: 120%;
+  background-image: linear-gradient(to bottom, variables.$background-linear-colorOne, variables.$background-linear-colorTwo);
+}

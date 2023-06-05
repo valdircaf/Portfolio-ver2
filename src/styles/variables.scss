@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Heading Pro Wide Trial Black";
+  src: url('../Assets/Fonts/Heading-Pro-Wide-Black-trial.ttf');
+}
+
+@font-face {
+  font-family: "Heading Pro Wide Trial Regular";
+  src: url('../Assets/Fonts/Heading-Pro-Wide-Regular-trial.ttf');
+}
+
+@font-face {
+  font-family: "Heading Pro Wide Trial Light";
+  src: url('../Assets/Fonts/Heading-Pro-Wide-Light-trial.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+$menu-fontStyle: "Heading Pro Wide Trial Black";
+$menu-fontColor: #020307;
+$menu-fontSize: 160px;
+$menu-fontSize-notebook: 140px;
+$menu-fontSize-notebook2: 120px;
+$menu-fontSize-tablet: 100px;
+$menu-fontSize-phone: 80px;
+$menu-fontSize-phone2: 60px;
+$menu-fontSize-iphone: 50px;
+$menu-dateFontStyle:'Russo One', sans-serif;
+
+$background-linear-colorOne: #4801FF;
+$background-linear-colorTwo: #320C94;
+
+$logo-fontColor: #FFF;
+$logo-h1-fontSize: 64px;
+$logo-h2-fontSize: 64px;
+$logo-h3-fontSize: 24px;
+$logo-fontFamily: "Heading Pro Wide Trial Regular";
+$logo-hover-fontFamily: "Heading Pro Wide Trial Light";
+
+$span-textColor: #52FF00;

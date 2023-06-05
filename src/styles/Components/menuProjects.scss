@@ -1,0 +1,82 @@
+@use '../variables.scss';
+@use '../mixins.scss';
+
+.container-menuProjects{
+  animation: showMenu 1s;
+  display: flex;
+  justify-content: right;
+
+  .links{
+    perspective: 600px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 200px;
+    align-items: center;
+    gap: 30px;
+    @include mixins.tablet{
+      padding-top: 300px;
+    }
+    @include mixins.phone{
+      padding-right: 70px;
+    }
+    @include mixins.phone2{
+      padding-right: 50px;
+    }
+    a:nth-child(1){
+      animation: transformRotate 1.5s;
+    }
+    a:nth-child(2){
+      animation: transformRotate 2s;
+    }
+    a:nth-child(3){
+      animation: transformRotate 2.5s;
+    }
+    a:nth-child(4){
+      animation: transformRotate 3s;
+    }
+    a{
+      text-align: right;
+      text-decoration: none;
+      transform: rotateY(-10deg);
+      font-size: 120px;
+      font-family: variables.$menu-fontStyle;
+      color: variables.$menu-fontColor;
+      width: 70%;
+      text-transform: uppercase;
+      transition: all .5s;
+      @include mixins.menuProjects-notebook1{
+        width: 80%;
+      }
+      @include mixins.notebook2{
+        text-align: center;
+        font-size: 90px;
+      }
+      @include mixins.tablet{
+        width: 60%;
+        font-size: 60px;
+      }
+      @include mixins.phone{
+        text-align: right;
+        font-size: 50px;
+        width: 80%;
+      }
+      @include mixins.phone2{
+        width: 100%;
+        font-size: 40px;
+      }
+      &:hover{
+        transition: all .5s;
+        color: transparent;
+        -webkit-text-stroke: 1px variables.$menu-fontColor;
+        transform: rotateY(0);
+      }
+    }
+  }
+
+
+
+
+
+
+}

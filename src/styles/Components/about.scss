@@ -1,0 +1,90 @@
+@use '../variables.scss';
+@use '../mixins.scss';
+
+@keyframes showAbout {
+  from{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.container-about{
+  display: flex;
+  justify-content: right;
+  gap: 71px;
+  align-items: center;
+  padding: 270px 50px 0 0;
+  animation: showAbout .5s;
+  overflow: hidden;
+  max-height: 100vh;
+  @include mixins.notebook{
+    padding: 380px 50px 0 50px;
+  }
+
+  @include mixins.notebook2{
+    padding: 320px 50px 0 50px;
+  }
+
+
+  @include mixins.tablet{
+    display: block;
+    padding: 470px 30px;
+  }
+
+  @include mixins.phone{
+    padding: 470px 30px;
+    display: block;
+  }
+
+  @include mixins.iphone{
+    padding: 270px 30px;
+    display: block;
+  }
+
+  .texts{
+    width: 600px;
+    color: #FFF;
+    @include mixins.tablet{
+      width: 100%;
+      padding: 0 20px;
+    }
+    h1{
+      font-family: variables.$logo-fontFamily;
+      font-size: 128px;
+      margin-bottom: 18px;
+      color: variables.$menu-fontColor;
+      @include mixins.notebook{
+        font-size: 110px;
+      }
+      @include mixins.tablet{
+        font-size: 80px;
+        overflow: hidden;
+      }
+      @include mixins.iphone{
+        font-size: 60px;
+      }
+    }
+    p{
+      font-size: 24px;
+      @include mixins.phone{
+        font-size: 16px;
+      }
+      span{
+        color: variables.$span-textColor;
+      }
+    }
+  }
+  .photo{
+    display: flex;
+    justify-content: center;
+    img{
+      @include mixins.tablet{
+        display: none;
+      }
+    }
+  }
+}
