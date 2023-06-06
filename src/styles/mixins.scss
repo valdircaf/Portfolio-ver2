@@ -5,7 +5,7 @@
 };
 
 @mixin bigger-screen{
-  @media (min-width: 2600px) {
+  @media (min-width: 1921px) {
     @content
   }
 };
