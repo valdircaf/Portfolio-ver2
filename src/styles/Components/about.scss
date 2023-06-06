@@ -4,83 +4,95 @@
 @keyframes showAbout {
   from{
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateY(-100%);
   }
   to{
     opacity: 1;
-    transform: translate(0);
+    transform: translateY(0);
+
+  }
+}
+
+@keyframes typing {
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
   }
 }
 
 .container-about{
   display: flex;
   justify-content: right;
-  gap: 71px;
   align-items: center;
-  padding: 270px 50px 0 0;
+  padding: 200px 100px 0 0;
+  gap: 50px;
   animation: showAbout .5s;
-  max-height: 100%;
-  @include mixins.menuProjects-notebook1{
-    gap: 31px;
-    padding: 50px 50px 0 0;
+  @include mixins.notebook{
+    padding: 400px 100px 0 0;
   }
-  @include mixins.notebook-height{
-    gap: 31px;
-    padding: 50px 50px 0 0;
-  }
-  @include mixins.notebook2{
-    padding: 500px 50px 0 0;
+  @include mixins.tablet{
+    justify-content: center;
+    padding: 400px 0 0 50px;
+    gap: 90px;
   }
   @include mixins.phone2{
-    padding: 390px 0 0 0;
+    justify-content: center;
+    padding: 300px 0 0 0;
     gap: 0;
   }
   .texts{
-    width: 600px;
+    width: 30%;
     color: #FFF;
-    @include mixins.menuProjects-notebook1{
-      width: 500px;
+    font-family: variables.$logo-fontFamily;
+    text-align: left;
+    @include mixins.about-notebook{
+      width: 40%;
+    }
+    @include mixins.tablet{
+      width: 50%;
+      text-align: center;
     }
     @include mixins.phone2{
-      width: 100%;
       text-align: center;
-      height: 120%;
-      padding: 16px;
+      width: 100%;
+      padding: 0 24px;
+      height: 60vh;
     }
+
     h1{
-      font-family: variables.$logo-fontFamily;
-      font-size: 128px;
-      margin-bottom: 18px;
       color: variables.$menu-fontColor;
-      @include mixins.menuProjects-notebook1{
-        font-size: 110px;
-      }
+      font-size: 100px;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 1s steps(30, end);
       @include mixins.about-notebook{
-        font-size: 100px;
+        font-size: 90px;
+      }
+      @include mixins.tablet{
+        font-size: 70px;
       }
       @include mixins.phone2{
         font-size: 60px;
+        margin-bottom: 24px;
       }
     }
     p{
-      font-size: 24px;
-      @include mixins.phone2{
-        font-size: 16px;
-      }
-      span{
-        color: variables.$span-textColor;
+      font-family: variables.$menu-dateFontStyle;
+      font-weight: 300;
+      text-align: left;
+      @include mixins.tablet{
+        text-align: center;
       }
     }
   }
   .photo{
-    display: flex;
-    justify-content: center;
+    margin-top: 15px;
     img{
+      width: 300px;
       @include mixins.tablet{
         display: none;
-      }
-      @include mixins.notebook2{
-        width: 250px;
       }
     }
   }

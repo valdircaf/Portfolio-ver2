@@ -8,9 +8,8 @@ export default function About() {
       <div className="texts">
         <h1>Sobre.</h1>
         <p>
-          Olá! Meu nome é Valdir Castro, sou desenvolvedor frontend e
-          gosto de criar interfaces que ganham vida na internet.
-          Meu interesse em programação veio em 2020 enquanto passávamos por uma pandemia.
+          Olá! Meu nome é Valdir Castro, sou desenvolvedor frontend. Apaixonado por
+          criar interfaces que ganham vida na internet.
           {' '}
           <br />
           <br />
