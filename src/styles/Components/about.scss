@@ -22,13 +22,17 @@
   max-height: 100%;
   @include mixins.menuProjects-notebook1{
     gap: 31px;
+    padding: 50px 50px 0 0;
+  }
+  @include mixins.notebook-height{
+    gap: 31px;
+    padding: 50px 50px 0 0;
   }
   @include mixins.notebook2{
-    padding: 470px 50px 0 0;
+    padding: 500px 50px 0 0;
   }
   @include mixins.phone2{
-
-    padding: 290px 0 0 0;
+    padding: 390px 0 0 0;
     gap: 0;
   }
   .texts{
