@@ -4,6 +4,13 @@
   }
 };
 
+@mixin bigger-screen{
+  @media (min-width: 2600px) {
+    @content
+  }
+};
+
+
 @mixin notebook{
   @media (max-width: 1530px) {
     @content
