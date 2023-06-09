@@ -1,0 +1,29 @@
+@use '../variables.scss';
+@use '../mixins.scss';
+
+.arrowBack{
+  position: fixed;
+  top: 20px;
+  left: 47px;
+  cursor: pointer;
+  z-index: 3;
+  @include mixins.phone{
+    top: 2px;
+    left: 10px;
+  }
+  a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 40px;
+    svg{
+      transition: all .2s;
+      &:hover{
+        transform: scale(1.2);
+        transition: all .5s;
+        color: variables.$menu-fontColor;
+      }
+    }
+  }
+
+
+}

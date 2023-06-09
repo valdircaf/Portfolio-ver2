@@ -29,6 +29,7 @@
   justify-content: right;
   min-height: 100vh;
   animation: showMenu 1s;
+  z-index: 1;
   .links{
     display: flex;
     flex-direction: column;

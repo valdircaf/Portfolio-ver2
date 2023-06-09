@@ -25,11 +25,9 @@
   @include mixins.notebook{
     top: 70px;
   }
-
   @include mixins.about-notebook{
     top: 70px;
   }
-
   @include mixins.notebook2{
     top: 70px;
   }
@@ -38,12 +36,11 @@
     left: 0;
     margin-left: 50%;
     transform: translateX(-50%);
-
   }
 
   @include mixins.iphone{
     gap: 16px;
-    top: 50px;
+    top: 80px;
   }
 
   a{
