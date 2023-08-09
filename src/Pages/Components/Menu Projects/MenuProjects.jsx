@@ -32,6 +32,14 @@ export default function MenuProjects() {
       <section className="links">
         <NavLink onClick={(e) => {
           submit(e);
+          handleClickNavigate('https://apple-market-liard.vercel.app/');
+        }}
+        >
+          Apple
+
+        </NavLink>
+        <NavLink onClick={(e) => {
+          submit(e);
           handleClickNavigate('https://daily-weather-app.vercel.app/');
         }}
         >
@@ -60,7 +68,6 @@ export default function MenuProjects() {
         }}
         >
           Portfolio Antigo
-
         </NavLink>
       </section>
     </section>
