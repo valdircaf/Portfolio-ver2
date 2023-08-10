@@ -65,7 +65,7 @@ export default function About() {
           </h4>
           <h5 className={isVisibleH2 ? 'show' : 'hide'}>
             Sei o básico:
-            <span> Java, C e C++</span>
+            <span> Java, C e C++, Angular 9+</span>
           </h5>
         </section>
       </section>
