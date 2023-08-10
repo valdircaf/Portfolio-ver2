@@ -11,6 +11,9 @@ export const NewContextProvider = ({children})=>{
   const [isActiveMenu, setIsActiveMenu] = useState(true);
   const [isActiveLinkedin, setIsActiveLinkedin] = useState(false);
   const [isActiveGithub, setIsActiveGithub] = useState(false);
+  const [isActiveLogo, setIsActiveLogo] = useState(true);
+  const [isActiveArrow, setIsActiveArrow] = useState(false);
+
 
 
   const handleOnClickAbout = ()=>{
@@ -35,7 +38,7 @@ export const NewContextProvider = ({children})=>{
 
   return(
 
-  <NewContext.Provider value={{isActiveMenu, isActiveAbout, isActiveProjects, isActiveLinkedin, isActiveGithub, handleOnClickAbout, handleOnClickProjects, handleOnClickLinkedin, handleOnClickGithub, setIsActiveMenu, setIsActiveProjects, setIsActiveAbout}}>
+  <NewContext.Provider value={{isActiveMenu, isActiveAbout, isActiveProjects, isActiveLinkedin, isActiveGithub, handleOnClickAbout, handleOnClickProjects, handleOnClickLinkedin, handleOnClickGithub, setIsActiveMenu, setIsActiveProjects, setIsActiveAbout, setIsActiveLogo, isActiveLogo, setIsActiveArrow, isActiveArrow}}>
     {children}
   </NewContext.Provider>
 

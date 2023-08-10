@@ -58,3 +58,9 @@
     @content
   }
 };
+
+@mixin adjustHeight{
+  @media (max-height: 1100px){
+    @content
+  }
+}

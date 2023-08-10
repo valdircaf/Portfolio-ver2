@@ -10,10 +10,8 @@ export default function Menu() {
   const forthLink = useRef();
   const {
     handleOnClickAbout, handleOnClickLinkedin, handleOnClickGithub,
-    handleOnClickProjects,
+    handleOnClickProjects, setIsActiveLogo, isActiveLogo, setIsActiveArrow,
   } = useContext(NewContext);
-  // isActiveAbout, isActiveProjects, isActiveLinkedin, isActiveGithub,
-  // isActiveMenu
 
   const submit = (e) => {
     e.preventDefault();
@@ -58,6 +56,7 @@ export default function Menu() {
             submit(e);
             setTimeout(() => {
               handleOnClickAbout();
+              setIsActiveLogo(!isActiveLogo);
             }, [1300]);
           }}
         >
@@ -74,6 +73,7 @@ export default function Menu() {
             submit(e);
             setTimeout(() => {
               handleOnClickProjects();
+              setIsActiveArrow(true);
             }, [1300]);
           }}
         >

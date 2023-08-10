@@ -7,11 +7,13 @@ import Projects from './Projects';
 import { NewContext } from '../contexts/Context';
 
 export default function Home() {
-  const { isActiveMenu, isActiveAbout, isActiveProjects } = useContext(NewContext);
+  const {
+    isActiveMenu, isActiveAbout, isActiveProjects, isActiveLogo,
+  } = useContext(NewContext);
 
   return (
     <section>
-      <section className="logo">
+      <section className={isActiveLogo ? 'logo' : 'hide'}>
         <Logo />
       </section>
       <section className={isActiveMenu ? 'menu' : 'hide'}>

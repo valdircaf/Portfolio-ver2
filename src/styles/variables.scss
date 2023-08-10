@@ -13,7 +13,14 @@
   src: url('../Assets/Fonts/Heading-Pro-Wide-Light-trial.ttf');
 }
 
+@font-face {
+  font-family: "Px";
+  src: url('../Assets/Fonts/PxPlus_IBM_VGA8.ttf');
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400&display=swap');
+
+
 
 $menu-fontStyle: "Heading Pro Wide Trial Black";
 $menu-fontColor: #020307;
@@ -35,5 +42,11 @@ $logo-h2-fontSize: 64px;
 $logo-h3-fontSize: 24px;
 $logo-fontFamily: "Heading Pro Wide Trial Regular";
 $logo-hover-fontFamily: "Heading Pro Wide Trial Light";
+
+$font-CMD: "Px";
+
+%span{
+  color: #4801FF;
+}
 
 $span-textColor: #52FF00;

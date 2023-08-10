@@ -5,14 +5,18 @@ import '../../../styles/Components/arrowBack.scss';
 import { NewContext } from '../../../contexts/Context';
 
 export default function ArrowBack() {
-  const { setIsActiveMenu, setIsActiveProjects, setIsActiveAbout } = useContext(NewContext);
+  const {
+    setIsActiveMenu, setIsActiveProjects, setIsActiveAbout, setIsActiveLogo,
+    isActiveArrow,
+  } = useContext(NewContext);
   return (
-    <section className="arrowBack">
+    <section className={isActiveArrow ? 'arrowBack' : 'hide'}>
       <BrowserRouter>
         <NavLink onClick={() => {
           setIsActiveMenu(true);
           setIsActiveProjects(false);
           setIsActiveAbout(false);
+          setIsActiveLogo(true);
         }}
         >
           <CgArrowLeft />

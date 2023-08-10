@@ -1,0 +1,31 @@
+@use '../variables.scss';
+@use '../mixins.scss';
+
+.navbar{
+  background: #1f1f1f;
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: .5rem 2.5%;
+  align-items: center;
+  font-family: variables.$font-CMD;
+  p{
+    font-size: 1.5rem;
+    font-family: variables.$font-CMD;
+    @include mixins.iphone{
+      font-size: 1rem;
+    }
+  }
+  .interations{
+    display: flex;
+    gap: 1rem;
+    svg{
+      fill: #858585;
+      font-size: 1.5rem;
+    }
+    .close{
+      cursor: pointer;
+    }
+  }
+}
