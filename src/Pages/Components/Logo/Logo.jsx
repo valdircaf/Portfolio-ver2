@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import '../../../styles/Components/logo.scss';
 import { BsArrowLeft } from 'react-icons/bs';
 import { NewContext } from '../../../contexts/Context';
-import qrCode from '../../../Assets/Images/scan.svg';
+import qrCode from '../../../Assets/Images/scan.png';
 
 export default function Logo() {
   const { setIsActiveMenu, setIsActiveProjects, setIsActiveAbout } = useContext(NewContext);
@@ -26,11 +26,7 @@ export default function Logo() {
         <button
           type="button"
           onClick={() => {
-<<<<<<< HEAD
-            window.location.href = 'https://drive.google.com/file/d/1GQWAN-8HBTyvinQTKn1ogWQsB_6X1m1-/view?usp=sharing';
-=======
-            window.location.href = 'https://drive.google.com/file/d/1xZVUUWJxJazzFq55Cck7POutVEeRlCfz/view?usp=sharing';
->>>>>>> b295d74b80fb095396fc3b913f6b2b24059c7a93
+            window.location.href = 'https://drive.google.com/file/d/10B3U37qrnk5zVyTK-jplFDOVdxy1OC6y/view?usp=sharing';
           }}
         >
           Baixar meu CV
