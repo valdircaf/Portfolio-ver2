@@ -26,7 +26,7 @@ export default function Logo() {
         <button
           type="button"
           onClick={() => {
-            window.location.href = 'https://drive.google.com/file/d/10B3U37qrnk5zVyTK-jplFDOVdxy1OC6y/view?usp=sharing';
+            window.location.href = 'https://drive.google.com/file/d/1GQWAN-8HBTyvinQTKn1ogWQsB_6X1m1-/view?usp=sharing';
           }}
         >
           Baixar meu CV
