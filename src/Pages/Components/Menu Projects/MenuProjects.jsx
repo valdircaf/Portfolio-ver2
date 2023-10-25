@@ -32,6 +32,14 @@ export default function MenuProjects() {
       <section className="links">
         <NavLink onClick={(e) => {
           submit(e);
+          handleClickNavigate('https://livechat-hkgu.onrender.com/');
+        }}
+        >
+          Live Chat
+
+        </NavLink>
+        <NavLink onClick={(e) => {
+          submit(e);
           handleClickNavigate('https://apple-market-liard.vercel.app/');
         }}
         >
